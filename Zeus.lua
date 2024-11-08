@@ -6069,23 +6069,6 @@ function getTime()
     return ("%.2d:%.2d:%.2d"):format(sec / 3600 % 24, sec / 60 % 60, sec % 60)
 end
 
-coroutine.wrap(
-    function()
-        game:GetService("RunService").Heartbeat:connect(
-            function()
-                banList = (banStore:GetAsync(banKey) or {})
-                for _, plyr in ipairs(game:GetService("Players"):GetPlayers()) do
-                    local banData = banList[tostring(plyr.UserId)]
-                    if (banData) then
-                        plyr:Kick("\nZeus Admin Ban\nTime: " .. getTime() .. "\nReason: " .. banData.Reason)
-                    end
-                end
-                wait(2)
-            end
-        )
-    end
-)()
-
 --//Start Communication
 Core:newRemote()
 
