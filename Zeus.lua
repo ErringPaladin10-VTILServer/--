@@ -103,8 +103,6 @@ else
     Jail = script.Children.Jail
 	GetDate = require(script.GetDate)
 	Notification_Module = require(script.SetNotifyModule)
-    NewMessageGuiModule = require(4187519235)
-    HintGuiModule = require(4164658084)
 end
 
 local Discord = require(script.WebhookAPI)
