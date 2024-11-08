@@ -6062,9 +6062,7 @@ if not game:GetService("RunService"):IsStudio() then
             end
         end
     )
-end
-
-Core:loadLog()
+					end
 
 function getTime()
     local sec = tick()
@@ -6104,7 +6102,7 @@ game:GetService("Players").PlayerAdded:Connect(
         Core:connectPlayer(Player)
         for x, y in pairs(ServerBans) do
             if y == Player.Name then
-                Player:Kick("Server banned by Zeus Admin")
+               -- Player:Kick("Server banned by Zeus Admin")
             end
         end
     end
