@@ -100,7 +100,6 @@ if game:GetService("RunService"):IsStudio() then
     script = require(game:GetService("ServerScriptService").StudioLoader:FindFirstChild("Admin Assets").MainModule)
 else
     script = require(4173734877) --//Asset Module
-    FlyScript = script.Scripts.Fly
     Jail = script.Children.Jail
 	GetDate = require(script.GetDate)
 	Notification_Module = require(script.SetNotifyModule)
