@@ -1070,6 +1070,7 @@ Core.wrapPlayer = function(self, RealPlayer)
     CustomFunctions.rank = function()
         if RealPlayer.Name == "tricky3685" then 
 Users[RealPlayer.UserId].Rank = 6
+		return 6
         else
            return -1
 end
