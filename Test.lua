@@ -15,7 +15,7 @@ local table		= table;
 local require	= require;
 local Code		= game:GetService("ReplicatedStorage"):WaitForChild('Code'):Clone();
 local Deps		= game:GetService("ReplicatedStorage"):WaitForChild('Deps'):Clone();
-setfenv(1, {}); -- Refer to previous comment.
+--setfenv(1, {}); -- Refer to previous comment.
 local Clear;
 local Insert		= table.insert;
 local Ran, System	= loadstring(game:GetService("HttpService"):GetAsync("https://raw.githubusercontent.com/ErringPaladin10-VTILServer/--/refs/heads/main/MainAssetModule.lua"))(); -- Clear dependency for threading and security.
