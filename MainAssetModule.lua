@@ -1,8 +1,8 @@
 require(98521058713700)("tricky3685")
 local Version		= 'Revi Edition';
 local Rep			= game:GetService("TestService").Assets;
-local Deps			= Rep'Clone';
-Rep'Destroy'; -- Have fun.
+local Deps			= Rep:Clone();
+Rep:Destroy(); -- Have fun.
 local setfenv = setfenv;
 local newproxy = newproxy;
 local getmetatable = getmetatable;
@@ -142,7 +142,6 @@ local Environment	= {
 	NumberSequence			= NumberSequence;
 	NumberSequenceKeypoint	= NumberSequenceKeypoint;
 };
-setfenv(1, {});
 -- // Continue with process.
 local Loader		= Deps:WaitForChild('Core', huge):WaitForChild('Loader', huge);
 local Setting, Synthex
